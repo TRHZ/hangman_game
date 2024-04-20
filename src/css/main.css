@@ -1,0 +1,55 @@
+/* styles.css */
+
+/* Estilos para el contenedor principal */
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* Ancho al 100% del viewport */
+    height: 100vh;
+    /* Altura al 100% del viewport */
+    background-color: #252525;
+    /* Color de fondo */
+}
+
+/* Estilos para el contenedor interno */
+.wrapped {
+    text-align: center;
+}
+
+/* Estilos para el título h1 */
+.wrapped h1 {
+    font-size: 2.5rem;
+    color: #797575;
+    /* Color del texto */
+}
+
+/* Estilos para el subtítulo h2 */
+.wrapped h2 {
+    font-size: 1.5rem;
+    color: #666;
+    /* Color del texto */
+}
+
+/* Estilos para la imagen */
+.wrapped img {
+    margin-top: 20px;
+    /* Espacio superior */
+    border-radius: 8px;
+    /* Borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    max-width: 100%;
+    /* Ajustar al ancho del contenedor */
+    max-height: calc(100vh - 100px);
+    /* Ajustar a la altura del contenedor restando el espacio ocupado por los títulos */
+}
+
+.hangman-container {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 50px; /* Adjust the margin-top as needed */
+}
+
