@@ -28,6 +28,7 @@ const Hangman = (props: HangmanProps) => {
   }, [gameStarted, word]);
 
   const displayWord = selectedWord.split("").map((letter) => {
+
     if (guessedLetters.includes(letter)) {
       return letter;
     } else {
