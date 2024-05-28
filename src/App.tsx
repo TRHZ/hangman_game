@@ -1,19 +1,37 @@
+// App.tsx
+import React, { useState } from 'react';
 import Welcome from './components/Welcome';
 import Hangman from './components/Hangman';
+import Clock from './components/Clock';
 import { getRandomCategory, getRandomWord } from './components/Categories';
 
 const App: React.FC = () => {
+  const [gameStarted, setGameStarted] = useState<boolean>(false);
+
+  const startGame = () => {
+    setGameStarted(true);
+  };
+
+  const endGame = () => {
+    setGameStarted(false);
+  };
+
   const selectedCategory: string = getRandomCategory();
   const selectedWord: string = getRandomWord(selectedCategory);
-  console.log(selectedCategory);
-  console.log(selectedWord);
-  
+
   return (
-    <div className='App'>
+    <div className="App">
       <Welcome />
-      <Hangman category={selectedCategory} word={selectedWord} />
+      <Clock gameStarted={gameStarted} />
+      <Hangman
+        category={selectedCategory}
+        word={selectedWord}
+        gameStarted={gameStarted}
+        onGameStart={startGame}
+        onGameEnd={endGame}
+      />
     </div>
   );
-}
+};
 
 export default App;

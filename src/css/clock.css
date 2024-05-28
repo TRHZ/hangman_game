@@ -1,0 +1,11 @@
+/* Estilos para el reloj */
+.clock {
+    font-size: 1.5rem; /* Tamaño de fuente del reloj */
+    color: #008e00; 
+    font-family: 'Courier New', Courier, monospace; 
+    position: absolute; /* Posición absoluta */
+    top: 20px; /* Ajustar la distancia desde la parte superior */
+    right: 20px; /* Ajustar la distancia desde el lado derecho */
+    z-index: 9999; /* Asegura que el reloj esté en la parte superior de otros elementos */
+    text-shadow: 0 0 5px #00ee00 ; /* Sombra de texto */
+}

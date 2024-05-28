@@ -1,17 +1,24 @@
-/* styles.css */
 
-/* Estilos para el contenedor principal */
 .App {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    /* Ancho al 100% del viewport */
-    height: 100vh;
-    /* Altura al 100% del viewport */
-    background-color: #252525;
-    /* Color de fondo */
+    width: 100vw; /* Ancho al 100% del viewport */
+    height: 100vh; /* Altura al 100% del viewport */
+    background-image: url(../img/Fallout1.jpg); /* URL de la imagen de fondo */
+    background-size: cover; /* Cubrir toda el área */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar repetición */
 }
+
+/* .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #252525;
+}  */
 
 /* Estilos para el contenedor interno */
 .wrapped {
@@ -20,15 +27,15 @@
 
 /* Estilos para el título h1 */
 .wrapped h1 {
-    font-size: 2.5rem;
-    color: #797575;
-    /* Color del texto */
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 3rem;
+    color: #008e00;
 }
 
 /* Estilos para el subtítulo h2 */
 .wrapped h2 {
     font-size: 1.5rem;
-    color: #666;
+    color: #008e00;
     /* Color del texto */
 }
 
@@ -51,5 +58,58 @@
     color: #fff;
     font-family: Arial, sans-serif;
     margin-top: 50px; /* Adjust the margin-top as needed */
+}
+
+.strike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    margin-top: 10px; /* Agrega espacio entre el cuadro de texto y los botones */
+}
+
+
+.strike button {
+    color: #7FFF00; /* Bright green */
+    border: 2px solid #7FFF00; /* Bright green */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.strike button:hover {
+    background-color: #7FFF00; /* Bright green */
+    color: #000;
+}
+
+.strike input {
+    background-color: #4d4d4d; /* Dark gray */
+    color: #7FFF00; /* Bright green */
+    border: 2px solid #7FFF00; /* Bright green */
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 40px;
+    text-align: center;
+}
+
+.strike input:focus {
+    outline: none;
+}
+
+.strike p {
+    margin-top: 20px;
+}
+
+.strike h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #7FFF00; /* Bright green */
 }
 
