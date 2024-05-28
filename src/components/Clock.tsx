@@ -7,7 +7,7 @@ interface ClockProps {
 
 const Clock: React.FC<ClockProps> = ({ gameStarted }) => {
   const [count, setCount] = useState(0);
-  const [intervalKey, setIntervalKey] = useState<NodeJS.Timeout | null>(null);
+  const [intervalKey, setIntervalKey] = useState<number | null>(null);
 
   useEffect(() => {
     if (gameStarted) {
